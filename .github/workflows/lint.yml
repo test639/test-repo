@@ -17,6 +17,7 @@ jobs:
           echo $GITHUB_REF
           echo $GITHUB_HEAD_REF
           echo $GITHUB_BASE_REF
+          cat $GITHUB_EVENT_PATH
         
       - name: Check out Git repository
         uses: actions/checkout@v2
