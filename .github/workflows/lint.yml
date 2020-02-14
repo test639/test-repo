@@ -33,6 +33,7 @@ jobs:
       - name: Run linters
         uses: samuelmeuli/lint-action@development
         with:
+          auto_fix: true
           github_token: ${{ secrets.github_token }}
           black: true
           flake8: true
